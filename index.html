@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  <!-- jqueryで実装する場合 -->
+        <link rel="stylesheet" href="main.css">
+        <title>電卓</title>
+    </head>
+
+    <body>
+      <div class="content-width">
+        <h3>電卓</h3>
+        <input class="input-point" type="text" id="result"/>
+        <div class="number-line">
+            <input class="btn" type="button" value="7" onclick="edit(7)"/>
+            <input class="btn" type="button" value="8" onclick="edit(8)"/>
+            <input class="btn" type="button" value="9" onclick="edit(9)"/>
+            <input class="btn" type="button" value="/" onclick="mod()"/>
+        </div>
+        <div class="number-line">
+            <input class="btn" type="button" value="4" onclick="edit(4)"/>
+            <input class="btn" type="button" value="5" onclick="edit(5)"/>
+            <input class="btn" type="button" value="6" onclick="edit(6)"/>
+            <input class="btn" type="button" value="*" onclick="mul()"/>
+        </div>
+        <div class="number-line">
+            <input class="btn" type="button" value="1" onclick="edit(1)"/>
+            <input class="btn" type="button" value="2" onclick="edit(2)"/>
+            <input class="btn" type="button" value="3" onclick="edit(3)"/>
+            <input class="btn" type="button" value="-" onclick="dif()"/>
+        </div>
+        <div class="number-line">
+            <input class="btn" type="button" value="0" onclick="edit(0)"/>
+            <input class="btn" type="button" value="00" onclick="ed()"/>
+            <input class="btn" type="button" value="." onclick="dc()"/>
+            <input class="btn" type="button" value="+" onclick="sum()"/>
+        </div>
+        <div class="number-line">
+            <input class="btn-1" type="button" value="AC" onclick="AC()"/>
+            <input class="btn-1" type="button" value="=" onclick="equal()"/>
+        </div>  
+      </div>
+      <script src="main.js"></script>
+    </boby>
+</html>
